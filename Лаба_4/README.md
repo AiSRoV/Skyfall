@@ -45,7 +45,7 @@ _3._ Заголовочный файл. </tr>
 
 __Файлы:__</tr>
 
-_1._ Файл реализующий игру "Иксики-нолики":</tr>
+_1._ main.cpp</tr>
 
 ``` C++
 #include <iostream>
@@ -108,7 +108,7 @@ int main() {
   return 0;
 }
 ```
-_2._ Вспомогательный файл.</tr>
+_2._ xo_func.cpp</tr>
 ```C++
 #include <iostream>
 #include <stdlib.h>
@@ -373,7 +373,7 @@ Game initGame(char userChar){
     return player;
 }
 ```
-_3._ Заголовочный файл:</tr>
+_3._ xo_func.h</tr>
 ```C++
 #ifndef XO_FUNC_H //защита от повторного вкл
 #define XO_FUNC_H
