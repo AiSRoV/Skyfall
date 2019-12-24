@@ -3,11 +3,11 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
-
+#include "xo_func.h" // здесь прототипы функций
 
 using namespace std;
-/* game state */
 
+/* game state */
 Game player;
 
 void updateDisplay(const Game game) {
@@ -43,7 +43,7 @@ void botTurn(Game* game) {
 			if (game->bord[i][1] == game->userChar)	counter++;
 			if (game->bord[i][2] == game->userChar)	counter++;
 			if (counter > 1) {
-				for (int j = 0; j < 3; ++j) { //пров столбц
+				for (int j = 0; j < 3; ++j) { //пров строки
 					if (game->bord[i][j] != game->userChar && game->bord[i][j] != game->botChar) {
 						game->bord[i][j] = game->botChar;
 						game->isUserTurn = true;
@@ -144,7 +144,7 @@ void botTurn(Game* game) {
 
 void userTurn(Game* game) {
 	int i, j;
-	while (true) {
+	while (true) { //если поле пустое
 		cout << "Viberite stroky 0..2 --> "; cin >> i;
 		cout << "Viberite stolbec 0..2 --> "; cin >> j;
 		if ((i>=0) && (i<=2) && (j>=0) && (j<=2)) {
@@ -248,7 +248,7 @@ Game initGame(char userChar){
 	player.userChar = userChar;
     player.botChar = botChar;
 
-	if (first) player.isUserTurn = true;
+	if (first) player.isUserTurn = true; 
     else player.isUserTurn = false;
 
     player.status = PLAY;
@@ -259,6 +259,6 @@ Game initGame(char userChar){
 		}
 	}
 
-    system("chcp 1251 > nul"); //меняем кодовую страницу на 1251 (866 дос)
+
     return player;
 }

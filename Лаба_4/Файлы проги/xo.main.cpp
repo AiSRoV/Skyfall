@@ -2,10 +2,9 @@
 //
 
 #include <iostream>
-#include <stdlib.h>
+#include <stdlib.h> //заголовочный файл
 #include <time.h>
 #include "xo_func.h" // здесь прототипы функций
-#include "xo_func.cpp" // здесь реализация функций
 
 using namespace std;
 
@@ -13,10 +12,9 @@ int main() {
 	short int first;
 	int i, j;
 
-	system("chcp 1251 > nul"); //меняем кодовую страницу на 1251 (866 дос)
+	system("chcp 1251 > null"); //меняем кодовую страницу на 1251
 
-	Game player;
-	Game initGame(char userChar);
+	Game player = initGame('X');
 
 	srand((unsigned)time(NULL));
 	first = rand() % 2;
@@ -34,12 +32,7 @@ int main() {
 		player.status = PLAY;
 	}
 
-	// очистка игрового поля
-	for (i = 0; i < 3; ++i) {
-		for (j = 0; j < 3; ++j) {
-			player.bord[i][j] = ' ';
-		}
-	}
+	
 
 	// бесконечный цикл (пока может хоть кто-то сделать ход)
 	while (!updateGame(&player)) {

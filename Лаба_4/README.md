@@ -52,7 +52,6 @@ _1._ main.cpp</tr>
 #include <stdlib.h>
 #include <time.h>
 #include "xo_func.h" // здесь прототипы функций
-#include "xo_func.cpp" // здесь реализация функций
 
 using namespace std;
 
@@ -63,8 +62,7 @@ int main() {
   system("chcp 1251 > nul"); //меняем кодовую страницу на 1251 (866 дос)
 
   Game player;
-  Game initGame(char userChar);
-
+  
   srand((unsigned)time(NULL));
   first = rand() % 2;
 
@@ -81,12 +79,7 @@ int main() {
     player.status = PLAY;
   }
 
-  // очистка игрового поля
-  for (i = 0; i < 3; ++i) {
-    for (j = 0; j < 3; ++j) {
-      player.bord[i][j] = ' ';
-    }
-  }
+  
 
   // бесконечный цикл (пока может хоть кто-то сделать ход)
   while (!updateGame(&player)) {
@@ -113,7 +106,7 @@ _2._ xo_func.cpp</tr>
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
-
+#include "xo_func.h" // здесь прототипы функций
 
 using namespace std;
 /* game state */
@@ -369,7 +362,6 @@ Game initGame(char userChar){
     }
   }
 
-    system("chcp 1251 > nul"); //меняем кодовую страницу на 1251 (866 дос)
     return player;
 }
 ```
