@@ -1,4 +1,4 @@
-﻿// 24. Функции работы со строками.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// 24. Фун-ии работы со строками.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
@@ -15,11 +15,11 @@ char* strcat(char* destptr, const char* srcptr); //объединение стр
 
 int main()
 {
-	char s1[255], s2[255];
+	char s1[50], s2[50];
 	char* ss1 = s1, * ss2 = s2;//указатели на строки
 
-	cin.getline(s1, 255, '\n');
-	cin.getline(s2, 255, '\n');
+	cin.getline(s1, 50, '\n');
+	cin.getline(s2, 50, '\n');
 
 	cout << strlen(s1) << " " << strlen(s2) << "\n";
 
