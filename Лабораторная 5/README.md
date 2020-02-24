@@ -409,7 +409,7 @@ int main()
  
  __Ссылка на файл с результатами расчета:__
 
-*<https://github.com/Starfall-6969/Skyfall>*
+*https://github.com/Starfall-6969/Skyfall/blob/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%205/temp_ofstream.txt*
 </tr>
 
 __Рассчитанные характеристики:__
