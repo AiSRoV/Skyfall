@@ -36,12 +36,12 @@ __Код программы:__
 
  ``` C++
 #include <iostream>
-#include <locale>
-#include <fstream>
+#include <locale> 
+#include <fstream> 
 #include <string>
 #include <vector>
 #include <stdlib.h> // atoi - строка в целое
-#include <iomanip> // setw setfill setprecision
+#include <iomanip> // для потока вывода и ввода 
 
 using namespace std;
 
@@ -63,13 +63,6 @@ struct Flight{
 
 // разбиваем строку данных на строки-составляющие
 // разделителем выступает символ `,`
-//   npos is a static member constant value with the greatest possible value
-//   for an element of type size_t. This value, when used as the value for a len
-//   (or sublen) parameter in string's member functions,
-//   means "until the end of the string". As a return value,
-//   it is usually used to indicate no matches.
-//
-//   cout << "npos = " << string::npos << endl;
 //
 vector<string> split(string str, string token){
     vector<string> result;
@@ -97,18 +90,7 @@ vector<string> split(string str, string token){
 
     return result;
 }
-/*
-string unite(vector<string> source, string delimiter){
-    string result = "";
-    for(int i=0; i<source.size(); ++i){
-        result += source.at(i);
-        if(i < source.size()-1){
-            result += delimiter;
-        }
-    }
-    return result;
-}
-*/
+
 // перевод вектора строк (строк из файла) -- в вектор структуры
 void vecStr_to_vecStruct(vector<string> & source, vector<Flight> & passenger){
     vector<string> arrstr;
@@ -137,21 +119,7 @@ void vecStr_to_vecStruct(vector<string> & source, vector<Flight> & passenger){
     }
 }
 
-// узнаем, каких параметров в данных нет, и сполько таких строк
-/*
-int count_absent(vector<string> & source, int parameter){
-    int kkk = 0;
-    vector<string> arrstr;
 
-    for(int i=1; i<source.size(); ++i){
-        arrstr = split(source.at(i), ",");
-        if(!arrstr.at(parameter).length()){
-            kkk++;
-        }
-    }
-    return kkk;
-}
-*/
 // подсчет количества всех пассажиров
 int count_all(vector<Flight> & source){
     int kkk = source.size(); // количество пассажиров;
@@ -245,7 +213,7 @@ int count_ages(vector<Flight> & source, string sex){
 }
 
 
-void max_people_from_state(vector<Flight> states, string & state_name, int & state_amount){
+void max_people_from_state(vector<Flight> states, string & state_name, int & state_amount){ //для того чтобы мы могли дальше использ переменные
     int a[3], max, imax;
     string state[3] = {"Cherbourg", "Queenstown", "Southampton"};
 
@@ -271,60 +239,60 @@ void max_people_from_state(vector<Flight> states, string & state_name, int & sta
 
 //поместить все строки файла в вектор
 bool getFileContent(string fileName, vector<string> & vecOfStrs){
-  // открываем файл для чтения
-  ifstream in(fileName.c_str());
+	// открываем файл для чтения
+	ifstream in(fileName.c_str());
 
-  // если не получилось открыть
-  if(!in){
-    cerr << "Cannot open the File : "<<fileName<<endl;
-    return false;
-  }
+	// если не получилось открыть
+	if(!in){
+		cerr << "Cannot open the File : "<<fileName<<endl; //для вывода ошибок
+		return false;
+	}
 
-  string str; // строка из файла
+	string str; // строка из файла
 
-  // читаем строки из файла, пока он не закончится
-  while (getline(in, str, '\r'))
-  {
-    // если в строке что-то есть - запишем это в вектор
-    if(str.size() > 0)
-      vecOfStrs.push_back(str);
-  }
-  // закрыть файл для чтения
+	// читаем строки из файла, пока он не закончится
+	while (getline(in, str, '\r'))
+	{
+		// если в строке что-то есть - запишем это в вектор
+		if(str.size() > 0)
+			vecOfStrs.push_back(str);
+	}
+	// закрыть файл для чтения
     in.close();
 
-  return true;
+	return true;
 }
 
 
 int main()
 {
-  int all_alive; // общее число выживших
-  int all_alive_class1; // общее число выживших 1 класса
-  int all_alive_class2; // общее число выживших 2 класса
-  int all_alive_class3; // общее число выживших 3 класса
-  int all_alive_female; // количество выживших женщин
-  int all_alive_male; // количество выживших мужчин
-  float mid_passenger_age; // средний возраст пассажира
-  float mid_female_age; // средний возраст женщин
-  float mid_male_age; // средний возраст мужчин
-  string state_name; // штат, в котором село больше всего пассажиров
-  int state_amount; // количество пассажиров наибольшего штата
+	int all_alive; // общее число выживших
+	int all_alive_class1; // общее число выживших 1 класса
+	int all_alive_class2; // общее число выживших 2 класса
+	int all_alive_class3; // общее число выживших 3 класса
+	int all_alive_female; // количество выживших женщин
+	int all_alive_male; // количество выживших мужчин
+	float mid_passenger_age; // средний возраст пассажира
+	float mid_female_age; // средний возраст женщин
+	float mid_male_age; // средний возраст мужчин
+	string state_name; // штат, в котором село больше всего пассажиров
+	int state_amount; // количество пассажиров наибольшего штата
     vector<int> before18; // список идентификаторов несовершеннолетних
 
 
-  vector<string> vecOfStr;
-  vector<Flight> vecOfFlight;
+	vector<string> vecOfStr;
+	vector<Flight> vecOfFlight;
 
     setlocale(LC_ALL, "Russian");
 
-  // получить данные из file в vector строк
-  bool result = getFileContent("train.csv", vecOfStr);
+	// получить данные из file в vector строк
+	bool result = getFileContent("train.csv", vecOfStr);
 
-  if(result)//если получилось открыть файл и считать данные
-  {
-      vecStr_to_vecStruct(vecOfStr, vecOfFlight);
+	if(result)//если получилось открыть файл и считать данные
+	{
+	    vecStr_to_vecStruct(vecOfStr, vecOfFlight);
 
-      cout << "records in file = " << vecOfStr.size() << endl;
+	    cout << "records in file = " << vecOfStr.size() << endl;
         cout << "all records have = " << vecOfFlight.size() << endl;
 
         all_alive         = count_alive(vecOfFlight);
@@ -341,38 +309,39 @@ int main()
         /////////////////////////////
         // вывод на экран результатов, которые должны быть в файле
         //////////////////////////////
-      cout << "alive = " << all_alive << endl;
-      cout << "alive 1 class = " << all_alive_class1 << endl;
-      cout << "alive 2 class = " << all_alive_class2 << endl;
-      cout << "alive 3 class = " << all_alive_class3 << endl;
-      cout << "alive male = " << all_alive_male << endl;
-      cout << "alive female = " << all_alive_female << endl;
-      cout << "middle age of passenger = " << mid_passenger_age << endl;
-      cout << "middle age of male = " << mid_male_age << endl;
-      cout << "middle age of female = " << mid_female_age << endl;
+	    cout << "alive = " << all_alive << endl;
+	    cout << "alive 1 class = " << all_alive_class1 << endl;
+	    cout << "alive 2 class = " << all_alive_class2 << endl;
+	    cout << "alive 3 class = " << all_alive_class3 << endl;
+	    cout << "alive male = " << all_alive_male << endl;
+	    cout << "alive female = " << all_alive_female << endl;
+	    cout << "middle age of passenger = " << mid_passenger_age << endl;
+	    cout << "middle age of male = " << mid_male_age << endl;
+	    cout << "middle age of female = " << mid_female_age << endl;
 
         max_people_from_state(vecOfFlight, state_name, state_amount);
 
         cout << "max amount of people are from `" << state_name << "` = " << state_amount << endl;
 
-      cout << "people before 18 = ";
-      for(int i=0; i<before18.size(); ++i){
+	    cout << "people before 18 = ";
+	    for(int i=0; i<before18.size(); ++i){
             cout << before18[i];
             if(i < before18.size()-1){
                 cout << ", ";
             }
-      }
-      cout << endl;
+	    }
+	    cout << endl;
 
-      ////////////////////////////
-      // выводим все в файл
-      ////////////////////////////
-        string my_path = "temp_ofstream.txt";
+	    ////////////////////////////
+	    // выводим все в файл
+	    ////////////////////////////
+       
+
         ofstream fout; // выходной файловый поток
-        fout.open(my_path.c_str(), ofstream::out);
+        fout.open("temp_ofstream.txt", ofstream::out);
 
         if(!fout.is_open()){
-            cout << "file write Error \"" << my_path.c_str() << "\"\n";
+            cout << "file write Error \"" << "temp_ofstream.txt" << "\"\n";
         }
         else{
             fout << "Общее число выживших";
@@ -401,8 +370,8 @@ int main()
             }
             fout.close(); // закрыли файл, завершили вывод
         }
-  }
-  return 0;
+	}
+	return 0;
 }
  ```
  </tr>
