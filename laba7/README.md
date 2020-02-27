@@ -35,71 +35,71 @@ __1.__ Чтобы создать консольное приложение С++ 
 _Рисунок 1. Создание нового проекта._ <br/>
 
 Далее появится окно "Размещение проекта". В нем можно дать название проекту и выбрать размещение. После этого нажимаем "Далее". 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/1.2.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/1.2.PNG)<br/>
 _Рисунок 2. Размещение проекта._ <br/>
 
 После этого в появившемся окне "Выбор системы сборки", выбираем "Систему сборки" - "qmake". И нажимаем "Далее". <br/>
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/1.3.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/1.3.PNG)<br/>
 _Рисунок 3. Выбор системы сборки._ <br/>
 
 Теперь появится окно "Выбор комплекта", в котором следует выбрать комплект "Desktop Qt ...." и далее. 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/1.4.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/1.4.PNG)<br/>
 _Рисунок 4. Выбор комплекта._ <br/>
 
 Следующее окно "Управление проектом", в котором следует нажать "Завершить". 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/1.5.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/1.5.PNG)<br/>
 _Рисунок 5. Управление проектом._
 
 Готово, консольное приложение С++ в IDE Qt Creator без использования компонентов Qt - создано! 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/1.6.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/1.6.PNG)<br/>
 _Рисунок 6. Созданный проект._
 
 
 __2.__ Чтобы изменить цветовую схему среды, следует в верхней панели выбрать  "Инструменты" -> "Параметры...". 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/2.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/2.PNG)<br/>
 _Рисунок 7. Открытие вкладки "Параметры"._ 
 
 Теперь, в появившемся окне, нужно выбрать "Среда", "Интерфейс" и тут можно изменить "Цвет",  "Тема" и др. 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/2.1.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/2.1.PNG)<br/>
 _Рисунок 8. Изменение цветофой схемы среды._ 
 
 __3.__ Для того, чтобы закомментировать/раскомментировать блк кода средствами Qt Creator, достаточно выделить нужный блок кода и использовать комбинацию клавишь `Ctrl`+`/`.
 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/3.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/3.PNG)<br/>
 _Рисунок 9. Комментирование кода._
 
 __4.__ Для открытия  в проводнике Windows папки с проектом средствами Qt Creator, достаточно в левом верхнем углу выбрать вкладку "Файл", в ней "Открыть файл или проект..." или использовать комбинацию клавишь `Ctrl`+`O`.
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/4.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/4.PNG)<br/>
 _Рисунок 10. Открытие проекта._ 
 
 __5.__ В Qt Creator используется расширение  файла-проекта `.pro`. 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/5.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/5.PNG)<br/>
 _Рисунок 11. Расширение файла-проекта Qt Creator._
 
 __6.__ Для запуска кода без отладки используется кнопка в левом нижнем углу в форме треугольника (зеленая). Так же можно использовать комбинацию клавишь `Ctrl`+`R`.  
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/6.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/6.PNG)<br/>
 
 _Рисунок 12. Кнопка для запуска кода без отладки._
 
 __7.__ Для запуска кода в режиме отладки используется кнопка в левом нижнем углу в виде треугольника с жучком, или использование клавиши `F5`. 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/7.11.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/7.11.PNG)<br/>
 
 _Рисунок 13. Кнопка для запуска кода в режиме отладки._
 
 __8.__ Для того, чтобы установить/убрать точку останова, можно использовать клавишу `F9`, после установления курсива на той строке, на которой нужно установить точку останова. 
 Так же можно установить точку останова просто кликнув в поле за нумерацией строк напротив той строки, где нужно ее поставить. 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/8.1.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/8.1.PNG)<br/>
  _Рисунок 14. Точка останова._ 
  
  __9.__ Создадим программу со следующим кодом: 
@@ -118,72 +118,72 @@ int main() {
 
 В 5й строке переменная i содержит 0. 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.PNG)<br/>
 _Рисунок 15. Режим отладки. Значение переменных в 5й строке._
 
 В 6й строке переменная d содержит 4.76288402562116174е-317 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.1.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.1.PNG)<br/>
 _Рисунок 16. Режим отладки. Значение переменных в 6й строке_
 
 В 7й строке переменные i и d содержат 5. 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.2.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.2.PNG)<br/>
 _Рисунок 17. Режим отладки. Значение переменных в 7й строке_
 
 Данные значения не сопадают с теми значениями, что были получены в MSVS соответствующих типов. 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.11.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.11.PNG)<br/>
 _Рисунок 18. Значение переменных в  MSVS в 5й строке._
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.12.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.12.PNG)<br/>
 _Рисунок 18. Значение переменных в  MSVS в 6й строке._
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.13.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/9.13.PNG)<br/>
 _Рисунок 18. Значение переменных в  MSVS в 7й строке._
 
 __10.__ Переходим во вкладку "Начало" -> "Примеры".
 
 __11.__ Выбирем проект «Calculator Form Example».
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/11.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/11.PNG)<br/>
 _Рисунок 19. Поиск проекта._
 
 __12.__ Изучаем. 
 
 __13.__ Находясь со вкладке "Проекты", требуется выбрать комплект сборки. 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/13.PNG)
-_Рисунок 20. Настройка проекта_
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/13.PNG)<br/>
+_Рисунок 20. Настройка проекта_<br/>
 
 __14.__ Перейдя на вкладку "Редактор" следует запустить сборку проекта. 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/14.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/14.PNG)<br/>
 _Рисунок 21. Запуск проекта_ 
 
 __15.__ В инспекторе проекта следует выбрать файл «main.cpp». В этом файле нужно установить курсор на слово «show» в строке calculator.show(); и нажать `F1`.  Таким образом была получена справка по объекту.
 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/15.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/15.PNG)<br/>
 _Рисунок 22. Проект, получение справки. _
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/15.1.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/15.1.PNG)<br/>
 _Рисунок 23. Справка по объекту._
 
 __16.__ В инспекторе проекта следует выбрать файл «Формы» => «calculatorform.ui». 
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/16.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/16.PNG)<br/>
 _Рисунок 24. Формы._
 
 __17.__ Попадая на вкладку «Дизайн», на форме заменяем английский текст на русский. Пересобераем проект.
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/16.1.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/16.1.PNG)<br/>
 _Рисунок 25. Вкладка "Дизайн"._
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/17.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/17.PNG)<br/>
 _Рисунок 26. Замена английского текста на русский._
 
-![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/17%D1%8E1.PNG)
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba7/photo/17%D1%8E1.PNG)<br/>
 _Рисунок 17. Результат пересборки._
 
 __Вывод:__
