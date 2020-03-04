@@ -1,5 +1,5 @@
 Федеральное государственное автономное образовательное учреждение высшего образования  
-
+  
 "КРЫМСКИЙ ФЕДЕРАЛЬНЫЙ УНИВЕРСИТЕТ им. В. И. ВЕРНАДСКОГО"  
 
 ФИЗИКО-ТЕХНИЧЕСКИЙ ИНСТИТУТ  
@@ -35,6 +35,7 @@ __Цель:__ </tr>
 __Код программы:__
 
  ``` C++
+
 #include <iostream>
 #include <locale> 
 #include <fstream> 
@@ -137,7 +138,7 @@ int count_all(vector<Flight> & source, string sex){
     return kkk;
 }
 
-// количество выживших (возраст и штат должны присутствовать)
+// количество выживших 
 int count_alive(vector<Flight> & source){
     int kkk = 0; // счетчик живых
     for(int i=0; i<source.size(); ++i){
@@ -148,7 +149,7 @@ int count_alive(vector<Flight> & source){
     return kkk;
 }
 
-// количество выживших, N-класса(возраст и штат должны присутствовать)
+// количество выживших, N-класса
 int count_alive(vector<Flight> & source, short passClass){
     int kkk = 0;
     for(int i=0; i<source.size(); ++i){
@@ -159,7 +160,7 @@ int count_alive(vector<Flight> & source, short passClass){
     return kkk;
 }
 
-// количество выживших, заданного пола (возраст и штат должны присутствовать)
+// количество выживших, заданного пола 
 int count_alive(vector<Flight> & source, string sex){
     int kkk = 0;
     for(int i=0; i<source.size(); ++i){
@@ -233,7 +234,6 @@ void max_people_from_state(vector<Flight> states, string & state_name, int & sta
     state_amount = max;
     state_name = state[imax];
 
-    //cout << "max amount of people are from `" << state[imax] << "`" << endl;
 }
 
 
@@ -417,7 +417,6 @@ __Рассчитанные характеристики:__
 __Вывод:__
 
 В ходе выполнения данной лабораторной работы был приобретен навык работы с текстовыми файлами, закреплен навык работы со структурами.  
-
 
 
 
