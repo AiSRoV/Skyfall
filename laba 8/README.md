@@ -33,18 +33,24 @@ __2.__ Изучить базовые понятия связанные с моб
 __3.__ Научиться создавать мобильные приложения при помощи фреймворка Qt 5.14.<br/>
 
 
-___1___ ![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba%208/foto/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.PNG)
+___1.___ <br/>
+![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba%208/foto/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.PNG)<br/>
+
 _Рисунок 1. Окно настроек Qt Creator после настройки для сборки android приложений<br/>_
 
-___2___ Название проекта __qmlvideofx__ <br/>
+___2.___ Название проекта __qmlvideofx__ <br/>
+
 ![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba%208/foto/1.PNG)
 <br/>
+
 _Рисунок 2. Проект **qmlvideofx**_ <br/>
 <br/>
 
-___3___ <br/>
+___3.___ <br/>
+
 ![](https://raw.githubusercontent.com/Starfall-6969/Skyfall/master/laba%208/foto/2.PNG)
  <br/>
+ 
  _Рисунок 3. Запуск проекта._ <br/>
   <br/>
   __Вывод__
